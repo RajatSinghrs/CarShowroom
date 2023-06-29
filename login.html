@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/15fffabc74.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+
+<body>
+    <div class="home">
+        <a href="home.html"><i class="fas fa-home"></i>Home</a>
+    </div>
+    <form action="login.php" method="POST" name="mmyForm" onsubmit="return validateForm()">
+        <div class="container">
+            <h1>Login </h1>
+            <div class="name">
+                <input type="text" name="uname" required>
+                <label> Username</label>
+                <span class="border"></span>
+            </div>
+            <div class="name">
+                <input type="password" name="password" required>
+                <label>Password</label>
+                <span class="border"></span>
+            </div>
+            <div class="btn">
+                <button name="submit" type="submit" id="contact-submit" onclick="validateForm()">Submit</button>
+            </div>
+            <p>Don't have an account? <a href="signup.html">SignUp</a></p>
+        </div>
+    </form>
+</body>
+
+</html>

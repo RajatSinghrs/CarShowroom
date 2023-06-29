@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #171717;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.head {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+.logo {
+    background-color: #171717;
+}
+
+.logo h1 {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 40px;
+    color: #1b8970;
+    font-weight: bold;
+}
+
+.head ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1f272d;
+    position: sticky;
+    display: flex;
+    top: 0;
+    border-bottom: 2px solid #1b8970;
+}
+
+.head ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    border-right: 2px solid #171717;
+}
+
+.head ul li i {
+    padding: 0 9px;
+}
+
+.head ul li:hover {
+    background-color: #3b4c54;
+}
+
+.wrapper nav {
+    position: fixed;
+    top: 122px;
+    left: 0;
+    list-style: none;
+    width: 150px;
+    height: 100%;
+    background: #171717;
+    border-right: #1b8970;
+}
+
+.wrapper ul li {
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.wrapper ul li a {
+    cursor: pointer;
+    color: white;
+}
+
+.wrapper ul li:hover {
+    color: #1b8970;
+    background-color: #3b4c54;
+}
+
+.content section {
+    display: block;
+    scroll-margin-top: 132px;
+    margin-left: 160px;
+    margin-top: 10px;
+    height: 100vh;
+    border: 2px solid #333;
+}
+
+.heading {
+    text-transform: uppercase;
+    text-align: center;
+    color: #1b8970;
+}
+
+.content h1 {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.content p {
+    padding: 10px;
+}
+
+.content table {
+    padding: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.content table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/15fffabc74.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="service_style.css">
+    <title>service</title>
+</head>
+
+<body>
+    <nav class="head">
+        <div class="logo">
+            <h1>Car Showroom</h1>
+        </div>
+        <ul>
+            <li style=" background-color: rgb(85, 84, 84);"><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+
+        </ul>
+    </nav>
+    <form id="contact" action="" method="post" name="myForm" onsubmit="return validateForm()">
+        <h3>Service form</h3>
+        <fieldset>
+            <input name="fname" placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input name="femail" placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input name="ftel" placeholder="Your Phone Number" type="tel" tabindex="3" required>
+        </fieldset>
+
+
+        <fieldset>
+            <select name="cars" id="cars">
+            <option value="volvo">Aventador</option>
+            <option value="saab">Huracan</option>
+            <option value="opel">Urus</option>          </select>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" onclick="validateForm()">Submit</button>
+        </fieldset>
+
+    </form>
+    <script src="service_js.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171717;
+}
+
+.logo h1 {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 40px;
+    color: #1b8970;
+    font-weight: bold;
+}
+
+.head ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1f272d;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.head ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 2px solid rgb(85, 84, 84);
+}
+
+.head ul li i {
+    padding: 0 9px;
+}
+
+.head ul li:hover {
+    background-color: #3b4c54;
+}
+
+#contact {
+    background: #3f6a7e;
+    padding: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact select,
+#contact option {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact select:hover {
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #1F272D;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #1f272d;
+}
+
+#contact button[type="submit"]:hover {
+    background: #3f6a7e;
+    transition: background-color 0.3s ease-in-out;
+    border: 2px solid #1f272d;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact select:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}

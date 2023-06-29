@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="signup_style.css">
+    <script src="https://kit.fontawesome.com/15fffabc74.js" crossorigin="anonymous"></script>
+    <title>SignUp</title>
+</head>
+
+<body>
+    <div class="home">
+        <a href="home.html"><i class="fas fa-home"></i>Home</a>
+    </div>
+    <form action="signup.php" method="POST">
+        <div class="container">
+            <h1>Sign up </h1>
+            <div class="name">
+                <input class="input" type="text" name="username" required>
+                <label> Username</label>
+                <span class="border"></span>
+            </div>
+            <div class="name">
+                <input class="input" type="text" name="number" required>
+                <label>Mob. Number</label>
+                <span class="border"></span>
+            </div>
+            <div class="name">
+                <input class="input" type="text" name="email" required>
+                <label> Email </label>
+                <span class="border"></span>
+            </div>
+
+            <div class="name">
+                <input class="input" type="password" name="pass" required>
+                <label>Create Password</label>
+                <span class="border"></span>
+            </div>
+
+            <div class="btn">
+                <input type="submit" value="Submit" name="submit"> </div>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+</body>
+
+</html>

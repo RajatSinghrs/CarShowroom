@@ -1,0 +1,124 @@
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-image: linear-gradient(to right, rgb(51, 102, 255), rgb(255, 77, 210));
+}
+
+.home {
+    position: sticky;
+    top: 10px;
+}
+
+.home a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255, 0.4);
+    margin: 10px 0 0 10px;
+    border-radius: 5px;
+}
+
+.home a:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.home i {
+    padding: 0 10px 0 0;
+}
+
+.container {
+    text-align: center;
+    margin: 10% auto;
+    width: 50%;
+    padding: 30px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .8)
+}
+
+.name {
+    position: relative;
+    margin: 40px auto;
+    width: 100%;
+}
+
+h1 {
+    left: 50%;
+    color: rgb(51, 102, 255);
+}
+
+:focus {
+    outline: none;
+}
+
+input {
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-bottom: 1px solid white;
+    padding: 4px 0;
+    width: 70%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+input~label {
+    position: absolute;
+    left: 15%;
+    top: 0;
+    pointer-events: none;
+    color: white;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+}
+
+.container .name input:focus~label,
+.container .name input:valid~label {
+    top: -16px;
+    font-size: 12px;
+    color: rgb(51, 102, 255);
+}
+
+span {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(51, 102, 255), rgb(255, 77, 210));
+    transition: 0.4s;
+}
+
+input:focus~span {
+    width: 70%;
+    transition: 0.4s;
+}
+
+.btn input {
+    background-image: linear-gradient(to right, rgb(51, 102, 255), rgb(255, 77, 210));
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .6);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px auto;
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn input:active {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .6);
+    width: 148px;
+}
+
+.container:hover {
+    color: red;
+}
+
+.container p {
+    color: #fff;
+    margin-top: 30px;
+}

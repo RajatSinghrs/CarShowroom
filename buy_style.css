@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #171717;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo h1 {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 40px;
+    color: #1B8970;
+    font-weight: bold;
+}
+
+.head ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1F272D;
+    display: flex;
+}
+
+.head ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 2px solid #171717;
+}
+
+.head ul li i {
+    padding: 0 9px;
+}
+
+.head ul li:hover {
+    background-color: #3B4C54;
+}
+
+.model {
+    width: 100%;
+    height: 500px;
+    background: url("images/model.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    margin-bottom: 20px;
+}
+
+.model h1 {
+    font-size: 80px;
+    color: white;
+    padding-bottom: 70px;
+}
+
+.model a {
+    position: relative;
+    overflow: hidden;
+    background-color: #3B4C54;
+    width: 250px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 26px;
+    padding: 2px;
+}
+
+.model a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #1F272D;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.model a:hover::after {
+    width: 100%;
+}
+
+.cars {
+    background-color: #1F272D;
+    width: 90%;
+    margin-left: 5%;
+    color: #CFCED2;
+    border-radius: 5px;
+}
+
+.one,
+.two,
+.three {
+    padding: 20px;
+}
+
+.cars .image img {
+    width: 40%;
+    float: right;
+}
+
+.text a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #3B4C54;
+    color: #CFCED2;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+.text a:hover {
+    box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.2), 0 6px 20px 0 rgba(150, 150, 150, 0.19);
+}
